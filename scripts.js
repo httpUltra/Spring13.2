@@ -22,11 +22,11 @@ function noDupes(arr) {
 
 // HAS CERTAIN KEY
 let arrOne = [
-    {title: "Instructor", first: 'Elie', last:"Schoppik", isCatOwner: false},
+    {title: "Instructor", first: 'Elie', last:"Schoppik"},
     {title: "Instructor", first: 'Tim', last:"Garcia", isCatOwner: true},
-    {title: "Instructor", first: 'Matt', last:"Lane", isCatOwner: true},
+    {title: "Instructor", first: 'Matt', last:"Lane"},
     {title: "Instructor", first: 'Colt', last:"Steele", isCatOwner: true}
-];
+  ]
 
 function hasKey(arr, key){
     return arr.every(function(obj){
@@ -34,3 +34,9 @@ function hasKey(arr, key){
     });
 }
 
+// HAS CERTAIN VALUE
+function hasVal(arr, key, val){
+    return arr.every(function(obj){
+      return obj[key] === val;;
+    })
+}
