@@ -40,22 +40,26 @@
 //       return obj[key] === val;;
 //     })
 // }
-// FIND BY USERNAME
-const users = [
-    {username: 'mlewis'},
-    {username: 'akagen'},
-    {username: 'msmith'}
-];
+// // FIND BY USERNAME
+// const users = [
+//     {username: 'mlewis'},
+//     {username: 'akagen'},
+//     {username: 'msmith'}
+// ];
 
 
-function byUsername(arr, search){
-    return arr.find(function (obj){
-        return obj.username === search;
-    })
-}
+// function byUsername(arr, search){
+//     return arr.find(function (obj){
+//         return obj.username === search;
+//     })
+// }
 
 
-// REMOVE USER
-function removeUser(arr){
-    arr.find
-}
+// // REMOVE USER
+// function removeUser(arr, search){
+//     return arr.find(function(obj){
+//         if(obj.username === search){
+//             return arr.splice(obj.username, 1);
+//         }
+//     })
+// }
